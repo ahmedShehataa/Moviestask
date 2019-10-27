@@ -20,9 +20,11 @@ class CategoryViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         if sortType == 1{
-            setupRemainingNavItems(title: "Popular Movies")
+            let Popular = NSLocalizedString("Popular Movies", comment: "popular")
+            setupRemainingNavItems(title: Popular)
         }else {
-            setupRemainingNavItems(title: "Top Rated Movies")
+            let topRated = NSLocalizedString("Top Rated Movies", comment: "top rated")
+            setupRemainingNavItems(title: topRated)
 
         }
 
@@ -46,5 +48,11 @@ extension CategoryViewController : UICollectionViewDelegate,UICollectionViewData
         return cell
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let sb = UIStoryboard(name: "Main", bundle: nil)
+        let vc = sb.instantiateViewController(withIdentifier: "DetailsViewController") as! DetailsViewController
+            vc.movId = movArray[indexPath.row].id
+        navigationController?.pushViewController(vc, animated: true)
+    }
     
 }

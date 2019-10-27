@@ -28,12 +28,6 @@ class trailerTableViewCell: UITableViewCell {
         trailerTableView.delegate = self
         trailerTableView.dataSource = self
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
     
 }
 extension trailerTableViewCell : UITableViewDataSource,UITableViewDelegate{
@@ -46,6 +40,22 @@ extension trailerTableViewCell : UITableViewDataSource,UITableViewDelegate{
         cell.videoLabel.text = list[indexPath.row].name
         return cell
     }
-    
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let id = list[indexPath.row].key
+        playInYoutube(youtubeId: id)
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    func playInYoutube(youtubeId: String) {
+        if let youtubeURL = URL(string: "youtube://\(youtubeId)"),
+            UIApplication.shared.canOpenURL(youtubeURL) {
+            // redirect to app
+            UIApplication.shared.open(youtubeURL, options: [:], completionHandler: nil)
+        } else if let youtubeURL = URL(string: "https://www.youtube.com/watch?v=\(youtubeId)") {
+            // redirect through safari
+            UIApplication.shared.open(youtubeURL, options: [:], completionHandler: nil)
+        }
+    }
     
 }

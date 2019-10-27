@@ -19,7 +19,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         setupRightNavItems()
-        setupRemainingNavItems(title: "The Movies")
+        let titel = NSLocalizedString("The Movies", comment: "title")
+        setupRemainingNavItems(title: titel)
 
         CategTableView.register(UINib.init(nibName: "MainTableViewCell", bundle: nil), forCellReuseIdentifier: "MainTableViewCell")
 
@@ -35,13 +36,13 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource{
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
-        if cellLable == "Top Rated" {
+        if cellLable == "Top Rated" || cellLable == "الأعلي تقييم" {
             if(indexPath.row == 0){
                 return tableCellHeight
             } else {
                 return 310
             }
-        }else if cellLable == "Popular" {
+        }else if cellLable == "Popular" || cellLable == "الأكثر شعبيه" {
             if(indexPath.row == 1){
                 return tableCellHeight
             } else {
@@ -56,10 +57,12 @@ extension ViewController : UITableViewDelegate,UITableViewDataSource{
 
         if indexPath.row == 0{
             cell.cellIndex = 0
-            cell.titleLabel.text = "Top Rated"
+            let topRated = NSLocalizedString("Top Rated", comment: "top rated")
+            cell.titleLabel.text = topRated
         }else {
             cell.cellIndex = 1
-            cell.titleLabel.text = "Popular"
+            let Popular = NSLocalizedString("Popular", comment: "popular")
+            cell.titleLabel.text = Popular
         }
 
         cell.cellViewController = self
@@ -90,7 +93,7 @@ extension UIViewController {
     
      func setupRightNavItems() {
         let searchButton = UIButton(type: .system)
-        searchButton.setImage(#imageLiteral(resourceName: "ic_home_24px").withRenderingMode(.alwaysOriginal), for: .normal)
+        searchButton.setImage(#imageLiteral(resourceName: "ic_menu_24px").withRenderingMode(.alwaysOriginal), for: .normal)
         searchButton.frame = CGRect(x: 0, y: 0, width: 14, height: 14)
         searchButton.contentMode = .scaleAspectFit
 

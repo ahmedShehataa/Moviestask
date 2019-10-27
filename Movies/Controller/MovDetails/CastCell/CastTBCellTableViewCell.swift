@@ -44,12 +44,12 @@ extension CastTBCellTableViewCell : UICollectionViewDataSource,UICollectionViewD
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = castCollectionView.dequeueReusableCell(withReuseIdentifier: "CastCollectionViewCell", for: indexPath) as! CastCollectionViewCell
         if let path = list[indexPath.row].profilePath{
-            cell.photo = list[indexPath.row].profilePath
+            cell.photo = path
             cell.CastName.text = list[indexPath.row].name
 //            print(path)
         }else{
             
-            cell.photo = "/n6bUvigpRFqSwmPp1m2YADdbRBc.jpg"
+            cell.photo = "/n6bUvigpRFqSwmPp1m2YADdbRBc.jpg" //placeholder
             cell.CastName.text = list[indexPath.row].name
         }
         return cell

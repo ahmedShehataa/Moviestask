@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Movies
+
+  Created by Shehata on 10/27/19.
+  Copyright © 2019 shehata. All rights reserved.
+*/
+"The Movies" = "الأفلام";
+"Popular" = "الأكثر شعبيه";
+"Top Rated" = "الأعلي تقييم";
+"Popular Movies" = "الأ فلام الأكثر شعبيه";
+"Top Rated Movies" = "الأفلام الأعلي تقييم";

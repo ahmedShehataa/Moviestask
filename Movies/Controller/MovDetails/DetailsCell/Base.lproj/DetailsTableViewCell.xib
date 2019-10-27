@@ -41,7 +41,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Movie Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHK-6g-k1a">
-                        <rect key="frame" x="147" y="69" width="110" height="23"/>
+                        <rect key="frame" x="40" y="69" width="324" height="23"/>
                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <nil key="highlightedColor"/>
@@ -95,7 +95,9 @@
                     <constraint firstItem="Cum-ty-2OE" firstAttribute="top" secondItem="WHK-6g-k1a" secondAttribute="bottom" constant="8" id="2cg-H3-SMA"/>
                     <constraint firstItem="Jtf-RL-YHI" firstAttribute="leading" secondItem="Cra-X3-XBO" secondAttribute="trailing" constant="49" id="4Ef-6x-QLK"/>
                     <constraint firstAttribute="trailing" secondItem="tqr-lO-eGK" secondAttribute="trailing" id="5g7-oX-Bbj"/>
+                    <constraint firstItem="WHK-6g-k1a" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="61G-yP-ree"/>
                     <constraint firstItem="arp-8n-fwG" firstAttribute="top" secondItem="rMU-Nz-D3l" secondAttribute="bottom" constant="8" id="6et-s2-Wp8"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="WHK-6g-k1a" secondAttribute="trailing" constant="20" id="9wp-KH-gTm"/>
                     <constraint firstItem="SIy-3b-XqV" firstAttribute="top" secondItem="Cra-X3-XBO" secondAttribute="bottom" constant="60" id="CJf-yd-2rg"/>
                     <constraint firstItem="Cum-ty-2OE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="Dn6-mf-kQW"/>
                     <constraint firstItem="Cra-X3-XBO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Exu-ma-Rmh"/>
@@ -107,7 +109,6 @@
                     <constraint firstItem="opF-2N-6pv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="KXx-Bf-bzg"/>
                     <constraint firstAttribute="trailingMargin" secondItem="arp-8n-fwG" secondAttribute="trailing" constant="8" id="Kip-4T-QZ7"/>
                     <constraint firstItem="arp-8n-fwG" firstAttribute="leading" secondItem="Cra-X3-XBO" secondAttribute="trailing" constant="49" id="MhM-wf-t3A"/>
-                    <constraint firstItem="WHK-6g-k1a" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="127" id="O70-MD-o2S"/>
                     <constraint firstItem="K4o-Ne-ezg" firstAttribute="leading" secondItem="Cra-X3-XBO" secondAttribute="trailing" constant="14" id="RR0-Fe-A1P"/>
                     <constraint firstAttribute="trailingMargin" secondItem="Cum-ty-2OE" secondAttribute="trailing" constant="10" id="VLm-yS-DDZ"/>
                     <constraint firstItem="Cra-X3-XBO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="156" id="YSi-7d-yhs"/>

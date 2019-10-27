@@ -28,7 +28,6 @@ class CastCollectionViewCell: UICollectionViewCell {
             guard let photo = photo else { return }
             
             // download image
-            print(Urls.baseImage + photo)
             Alamofire.request(Urls.baseImage + photo).response { response in
                 if let data = response.data, let image = UIImage(data: data) {
                     self.CastIV.image = image

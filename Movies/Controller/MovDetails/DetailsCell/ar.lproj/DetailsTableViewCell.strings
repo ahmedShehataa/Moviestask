@@ -1,0 +1,18 @@
+
+/* Class = "UILabel"; text = "Movie tagline"; ObjectID = "Cum-ty-2OE"; */
+"Cum-ty-2OE.text" = "Movie tagline";
+
+/* Class = "UILabel"; text = "Released"; ObjectID = "Jtf-RL-YHI"; */
+"Jtf-RL-YHI.text" = "Released";
+
+/* Class = "UILabel"; text = "Movie Name"; ObjectID = "WHK-6g-k1a"; */
+"WHK-6g-k1a.text" = "Movie Name";
+
+/* Class = "UILabel"; text = "mins"; ObjectID = "arp-8n-fwG"; */
+"arp-8n-fwG.text" = "mins";
+
+/* Class = "UILabel"; text = "Overview"; ObjectID = "opF-2N-6pv"; */
+"opF-2N-6pv.text" = "نظره عامه";
+
+/* Class = "UILabel"; text = "Reviews"; ObjectID = "rMU-Nz-D3l"; */
+"rMU-Nz-D3l.text" = "Reviews";

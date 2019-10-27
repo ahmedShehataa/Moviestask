@@ -31,7 +31,10 @@ class DetailsTableViewCell: UITableViewCell {
             if let min = detailsModel?.runtime {
                 minsLabel.text = "\(String(describing: min)) mins"}
             if let review = detailsModel?.voteAverage , let vote = detailsModel?.voteCount{
-                    reviewLabel.text = String(describing: review) + "\(String(describing: vote)) Reviews"
+                    reviewLabel.text = String(describing: review) + " (\(String(describing: vote)) Reviews)"
+            }
+            if let released = detailsModel?.releaseDate{
+                releasedLabel.text = "\(String(describing: released)) Released"
             }
 
             overViewText.text = detailsModel?.overview

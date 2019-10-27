@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "20i-lc-yoJ"; */
+"20i-lc-yoJ.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Movies"; ObjectID = "Bxc-Si-nqI"; */
+"Bxc-Si-nqI.text" = "الأفلام";
+
+/* Class = "UIButton"; normalTitle = "Show All"; ObjectID = "XHZ-5s-rwN"; */
+"XHZ-5s-rwN.normalTitle" = "عرض الكل";
+
+/* Class = "UILabel"; text = "Top Rated"; ObjectID = "xQD-OQ-EId"; */
+"xQD-OQ-EId.text" = "الأعلي تقييم";

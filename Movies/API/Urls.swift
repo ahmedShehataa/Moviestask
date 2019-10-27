@@ -10,6 +10,7 @@ import Foundation
 struct Urls {
     
     static let main = "https://api.themoviedb.org/3/movie/"
+    static let api_key = "6b2224a8468ad0b04b6b161d30e959f0"
     
     static let popular = main + "popular?"
     static let topRated = main + "top_rated?"
@@ -17,6 +18,8 @@ struct Urls {
     static let movDetails = main
     
     static let baseImage = "https://image.tmdb.org/t/p/w500"
+    
+    
     
     
 }

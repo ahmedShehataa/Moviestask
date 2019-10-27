@@ -20,7 +20,6 @@ class Network: NSObject {
     func getData<T: Codable>(_ decoder: T.Type, url: String, parameters: [String:Any]?, method: HTTPMethod = .get, compaletion: ((_ error: String? , _ data: T?) -> Void)? = nil )  {
         
         let header = ["X-localization" : "ar"
-            // "Accept" : "application/json"
         ]
         
         Alamofire.request(url, method: method, parameters: parameters, encoding: JSONEncoding.default, headers: header )
